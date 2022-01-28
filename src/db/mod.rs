@@ -23,3 +23,5 @@ pub fn query_task(connection: &SqliteConnection) -> Vec<models::Task> { // query
         .load::<models::Task>(connection)                               // load the tasks
         .expect("Error loading tasks")                                  // panic if the query failed
 }
+
+// Add tests to src/db/tests.rs
