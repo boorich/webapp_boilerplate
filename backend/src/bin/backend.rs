@@ -9,8 +9,8 @@ extern crate serde;
 
 
 use rocket_contrib::json::Json;
-use mytodo::db::models::Task;
-use mytodo::db::{query_task, establish_connection};
+use backend::db::models::Task;
+use backend::db::{query_task, establish_connection};
 
 #[derive(Serialize)] 						// Serialize the struct
 struct JsonApiResponse { 					// Create a struct to hold the response
